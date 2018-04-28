@@ -5,6 +5,8 @@ module.exports = {
         path: __dirname + "/public/dist"
     },
 
+    mode: "development",
+
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
@@ -31,4 +33,9 @@ module.exports = {
         "react": "React",
         "react-dom": "ReactDOM"
     },
+
+    devServer: {
+        contentBase: "./public/",
+        publicPath: "/dist/"
+    }
 };

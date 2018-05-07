@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import Config from './config';
+import Config from '../common/config';
 
 let app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -17,6 +17,6 @@ app.get('/', (req, res) => {
     res.send(200);
 });
 
-app.listen(Config.port(), () => {
-    console.info('Started Lutas IOT React on port', Config.port());
+app.listen(Config.port, () => {
+    console.info('Started Lutas IOT React on port', Config.port);
 });

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Config from "../../common/config";
 
 type HomeProps = {};
 
@@ -10,7 +11,7 @@ export default class Home extends React.Component<HomeProps> {
     public render(): JSX.Element {
         return (
             <div>
-                Hello
+                Hello, connecting to backend on port {Config.port}
             </div>
         );
     }

@@ -1,8 +1,8 @@
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: "./src/frontend/index.tsx",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/public/dist"
+        path: __dirname + "/dist/frontend/"
     },
 
     mode: "development",
@@ -35,7 +35,7 @@ module.exports = {
     },
 
     devServer: {
-        contentBase: "./public/",
-        publicPath: "/dist/"
+        contentBase: "./src/frontend/public/",
+        publicPath: "/"
     }
 };

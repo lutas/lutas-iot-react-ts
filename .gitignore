@@ -43,4 +43,4 @@ jspm_packages
 **/cache/**
 
 # dist
-public/dist/**
+/dist/**

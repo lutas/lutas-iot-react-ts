@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Config from "../../common/config";
 
+import Weather from './weather';
+
 type HomeProps = {};
 
 export default class Home extends React.Component<HomeProps> {
@@ -12,6 +14,9 @@ export default class Home extends React.Component<HomeProps> {
         return (
             <div>
                 Hello, connecting to backend on port {Config.port}
+
+                <h1>Weather</h1>
+                <Weather />
             </div>
         );
     }
